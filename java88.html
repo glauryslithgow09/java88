@@ -1,0 +1,50 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documento</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: deepskyblue;">
+
+    <script>
+        var oracion = 'Hoy es un dia muy especial para todos';
+        var patron = /es/gi;
+        var vec = patron.exec(oracion);
+        document.write(vec.index); //0
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec.index); //4
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec.index); //18
+        document.write('<br>');
+        vec = patron.exec(oracion);
+        document.write(vec); //null
+    </script>
+
+</body>
+
+</html>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documento</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: firebrick;">
+
+    <script>
+        var cadena = 'Julian tiene 15 años Ana tiene 24 años Joel tiene 30 años';
+        var vec = cadena.match(/\d+/g);
+        for (var y = 0; y < vec.length; y++) {
+            document.write(vec[y] + '<br>');
+        }
+    </script>
+
+</body>
+
+</html>
